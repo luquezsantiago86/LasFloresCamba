@@ -224,7 +224,7 @@ body {
 }
 
 .firstTitle {
-    color: rgb(128 137 137)
+    color: whitesmoke
 }
 
 a,
@@ -268,13 +268,19 @@ a:active {
 
 #firstView {
     background: rgba(0, 0, 0, 0);
-    background-image: url('../images/7.jpeg');
-    /* background-repeat: no-repeat; */
+    background-image: url('../images/cityBell/16_2.jpg');
     background-attachment: fixed;
-    background-size: cover;
-    /* color: rgb(78, 90, 125); */
-    color: snow;
+    background-size: 100% auto;
+    background-position: center;
+    /* -webkit-filter: grayscale(100%); */
+    /* Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%); */
 }
+
+
+/* .firstView {
+    width: 150%;
+} */
 
 #tellUs {
     color: snow;
@@ -283,7 +289,7 @@ a:active {
 
 #geoaustral {
     background: rgba(0, 0, 0, 0);
-    background-image: url('../images/geoaustral.png');
+    background-image: url('../images/cityBell/10_2.jpg');
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     background-size: cover;
