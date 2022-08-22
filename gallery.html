@@ -2,6 +2,14 @@
 <html>
 
 <head>
+    <!-- Jqquery to load other html files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Load header -->
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+        })
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Las Flores Cambá</title>
@@ -12,19 +20,7 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <div class="logoDiv">
-            <img src="assets/dist/images/titleBlack.png" class='logo'>
-        </div>
-        <a href="./features.html">Home</a>
-        <a href="./whatWeDo.html">Quienes Somos</a>
-        <a href="./products.html">Productos & Servicios</a>
-        <a href="./gallery.html">Galería</a>
-        <a href="./booking.html">Reservas</a>
-        <a href="./contact.html">Contacto</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
+    <div id="header"></div>
     <main>
         <section class="py-5 text-center container">
             <div class="row py-lg-5">

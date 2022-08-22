@@ -2,9 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Jqquery to load other html files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Load header -->
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+        })
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Geoaustral Apps</title>
+    <title>Las Flores Cambá</title>
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/dist/images/favicon.ico" />
     <link href="assets/dist/css/product.css" rel="stylesheet">
@@ -12,43 +20,7 @@
 </head>
 
 <body>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_R5h8ddEmdQPBoBLtfKacw');
-            // emailjs.init('service_fbf5pdr');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                // this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_fbf5pdr', 'template_qdudjjb', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-    <div class="topnav" id="myTopnav">
-        <div class="logoDiv">
-            <img src="assets/dist/images/logo.png" class='logo'>
-        </div>
-        <a href="./rthrth.html"> </a>
-        <a href="./sbvdf.html"></a>
-        <a href="./features.html">Home</a>
-        <a href="./whatWeDo.html">About Us</a>
-        <a href="./products.html">Products & Services</a>
-        <a href="./partnership.html">Who Trust Us</a>
-        <a href="./contact.html">Contact Us</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
+    <div id="header"></div>
     <main>
         <div class="containerProducts">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
