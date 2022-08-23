@@ -2,16 +2,39 @@
 <html lang="en">
 
 <head>
+    <!-- Jqquery to load other html files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Load header -->
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+        })
+        $(function() {
+            $('#footer').load('footer.html');
+        })
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Geoaustral Apps</title>
+    <title>Las Flores Cambá</title>
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/dist/images/favicon.ico" />
-    <link href="assets/dist/css/product.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/dist/css/stylesheet.css">
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        .logo {
+            width: 200px;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header class="site-header py-1 headerDiv">
+        <div id="header"></div>
+    </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="topnav" id="myTopnav">
         <div class="logoDiv">
@@ -125,19 +148,8 @@
         </div>
         </div>
     </main>
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <footer class="mt-auto text-black-50">
-                    <hr class="rounded">
-                    <!--                     <small> <a class="whatsapp" href="https://wa.me/447774593153"><i class="fab fa-whatsapp"></i> Whatsapp<br></a>  </small> -->
-                    <small><a class="linkedin" href="https://www.linkedin.com/company/geoaustral-apps/"><i class="fab fa-linkedin"></i> LinkedIn<br></a>  </small>
-                    <small>Registered Name: Geoaustral Apps Ltd.<br> </small>
-                    <small>Company Number: 13237739</small>
-                    <small class="d-block mb-3 text-muted">2021</small>
-                </footer>
-            </div>
-        </div>
+    <footer>
+        <div id="footer"></div>
     </footer>
     <script src="main.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
