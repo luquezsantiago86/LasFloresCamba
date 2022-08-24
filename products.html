@@ -21,6 +21,14 @@
     <!-- <link href="assets/dist/css/product.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/dist/css/stylesheet.css">
     <style>
+        .card {
+            border: 1px solid rgb(65 70 75 / 68%);
+        }
+        
+        .card-header {
+            border-bottom: 1px solid rgb(65 70 75 / 30%);
+        }
+        
         .btn-outline-primary {
             color: #41464b;
             border-color: #636464;
@@ -81,14 +89,25 @@
                             <li class="list-group-item">City Bell</li>
                             <li class="list-group-item"> </li>
                         </ul>
-                        <button id="devBtn" type="button" href="./modals/developmentServices.html" class="w-100 btn btn-lg btn-outline-primary">Más Info</button>
+                        <button id="devBtn" type="button" href="./modals/montaCB.html" class="w-100 btn btn-lg btn-outline-primary">Más Info</button>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="devModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-
+            <div class="col">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Las Flores Cambá</h4>
+                        <h7 class="my-0 fw-normal">Centro de Monta</h7>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush mt-3 mb-4">
+                            <div id="productsMonta" class="shadow-sm mx-auto">
+                            </div>
+                            <li class="list-group-item"> </li>
+                            <li class="list-group-item">Ignacio Correas</li>
+                            <li class="list-group-item"> </li>
+                        </ul>
+                        <button id="gprTrackerBtn" type="button" href="./modals/montaIC.html" class="w-100 btn btn-lg btn-outline-primary">Más Info</button>
                     </div>
                 </div>
             </div>
@@ -114,24 +133,6 @@
             <div class="col">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 fw-normal">Las Flores Cambá</h4>
-                        <h7 class="my-0 fw-normal">Centro de Monta</h7>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush mt-3 mb-4">
-                            <div id="productsMonta" class="shadow-sm mx-auto">
-                            </div>
-                            <li class="list-group-item"> </li>
-                            <li class="list-group-item">Ignacio Correas</li>
-                            <li class="list-group-item"> </li>
-                        </ul>
-                        <button id="gprTrackerBtn" type="button" href="./modals/gprTracker.html" class="w-100 btn btn-lg btn-outline-primary">Más Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
                         <h4 class="my-0 fw-normal">Agroveterinaria</h4>
                         <h7 class="my-0 fw-normal">La Esquina</h7>
                     </div>
@@ -144,6 +145,13 @@
                             <li class="list-group-item"> </li>
                         </ul>
                         <button id="tomographyBtn" type="button" href="./modals/tomography.html" class="w-100 btn btn-lg btn-outline-primary">Más Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="devModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+
                     </div>
                 </div>
             </div>
