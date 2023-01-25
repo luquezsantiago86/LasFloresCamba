@@ -9,6 +9,9 @@
         $(function() {
             $('#header').load('header.html');
         })
+        $(function() {
+            $('#footer').load('footer.html');
+        })
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,181 +27,81 @@
     <main>
         <div class="containerProducts">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">Dónde encontrarnos</h1>
-                <!-- <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p> -->
+                <!-- <h1 class="display-4">Dónde encontrarnos</h1> -->
             </div>
             <div class="row text-center">
                 <div class="col">
-                    <div class="card mb-4 shadow-sm">
+                    <div id="googleMapsAll" class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            <h4 class="my-0 fw-normal">Centro de Monta <br>City Bell</h4>
+                            <h4 class="my-0 fw-normal">Dónde encontrarnos</h4>
                         </div>
                         <div class="card-body">
                             <div>
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.836798050029!2d-58.08184028500112!3d-34.88544427996551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dfe75e26a663%3A0xb0b77cc7d8db9a59!2sLas%20Flores%20Camb%C3%A1%20-%20Centro%20de%20Monta!5e0!3m2!1ses-419!2suk!4v1660663366594!5m2!1ses-419!2suk"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MnzK83LetgTa8fDM3jJr3qm7pQZXSaQ&ehbc=2E312F" width="640" height="480"></iframe>
+                                <iframe id="googleMapsFrame" src="https://www.google.com/maps/d/u/0/embed?mid=1MnzK83LetgTa8fDM3jJr3qm7pQZXSaQ&ehbc=2E312F" width="640" height="480"></iframe>
                             </div>
-                            <!-- <button id="devBtn" type="button" href="./development.html" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn more</button> -->
-                            <button id="devBtn" type="button" href="./modals/developmentServices.html" class="w-100 btn btn-lg btn-outline-primary">Más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="devModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                        <div class="modal-content">
-                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MnzK83LetgTa8fDM3jJr3qm7pQZXSaQ&ehbc=2E312F" width="640" height="480"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 shadow-sm">
+                    <div id="googleMapsAll" class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            <h4 class="my-0 fw-normal">Dashboarding</h4>
+                            <h4 class="my-0 fw-normal">Contacto</h4>
                         </div>
                         <div class="card-body">
                             <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
                             <!-- <img src="./assets/dist/images/gprTracker/box.png" id="gprTrackerBox"> -->
                             <i class="fas fa-chart-pie fa-6x"></i>
                             <ul class="list-group list-group-flush mt-3 mb-4">
-
-                                <li class="list-group-item">Data Automation</li>
-                                <li class="list-group-item">Realtime Information</li>
-                                <li class="list-group-item">Reports, Graphs, Tables, KPIs</li>
-                                <li class="list-group-item">Map Integration</li>
+                                <li class="list-group-item">
+                                    <B> Veterinaria - City Bell</B>
+                                    <BR>
+                                    <B>Teléfono:</B> 444-444
+                                    </BR>
+                                    <B>Email:</B> hjgbjhgb@jhgbjh.com
+                                    <Br></Br>
+                                </li>
+                                <li class="list-group-item">
+                                    <br>
+                                    <B> Veterinaria - Abasto</B>
+                                    <BR>
+                                    <B>Teléfono:</B> 444-444
+                                    </BR>
+                                    <B>Email:</B> hjgbjhgb@jhgbjh.com
+                                    <Br></Br>
+                                </li>
+                                <li class="list-group-item">
+                                    <br>
+                                    <B> Centro de Monta - City Bell</B>
+                                    <BR>
+                                    <B>Teléfono:</B> 444-444
+                                    </BR>
+                                    <B>Email:</B> hjgbjhgb@jhgbjh.com
+                                    <Br></Br>
+                                </li>
+                                <li class="list-group-item">
+                                    <br>
+                                    <B> Centro de Monta - Ignacio Correas</B>
+                                    <BR>
+                                    <B>Teléfono:</B> 444-444
+                                    </BR>
+                                    <B>Email:</B> hjgbjhgb@jhgbjh.com
+                                </li>
                             </ul>
-                            <!-- <a href="./gprTracker.html"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn more</button></a> -->
-                            <button id="dashboardingBtn" type="button" href="./modals/dashboarding.html" class="w-100 btn btn-lg btn-outline-primary">Learn more</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <h4 class="my-0 fw-normal">GPR Tracker</h4>
-                        </div>
-                        <div class="card-body">
-                            <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-                            <img src="./assets/dist/images/gprTracker/box.png" id="gprTrackerBox">
 
-                            <ul class="list-group list-group-flush mt-3 mb-4">
 
-                                <li class="list-group-item">Realtime geoposition</li>
-                                <li class="list-group-item">Raster Images</li>
-                                <!-- <li class="list-group-item">Multiple projects</li> -->
-                                <!-- <li class="list-group-item">Multilayer</li> -->
-                            </ul>
-                            <!-- <a href="./gprTracker.html"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn more</button></a> -->
-                            <button id="gprTrackerBtn" type="button" href="./modals/gprTracker.html" class="w-100 btn btn-lg btn-outline-primary">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <h4 class="my-0 fw-normal">SGD Cloud </h4>
-                        </div>
-                        <div class="card-body">
-                            <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-                            <img src="./assets/dist/images/tomography/box.png" id="gprTrackerBox">
-                            <ul class="list-group list-group-flush mt-3 mb-4">
-                                <li class="list-group-item">Tomograpy</li>
-                                <li class="list-group-item">VES Data</li>
-                                <li class="list-group-item">Cloud Data</li>
-                                <li class="list-group-item">Volume Calculator</li>
-                            </ul>
-                            <!-- <a href="./gprTracker.html"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn more</button></a> -->
-                            <button id="tomographyBtn" type="button" href="./modals/tomography.html" class="w-100 btn btn-lg btn-outline-primary">Learn more</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         </div>
-        <div>
 
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52304.7031132445!2d-58.147276639938354!3d-34.98056397983328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2c34426e4fa51%3A0x433d0438593453ac!2sEsqu%C3%ADna%20Regaler%C3%ADa%20Criolla!5e0!3m2!1ses-419!2suk!4v1660663578949!5m2!1ses-419!2suk"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7348.007653070368!2d-58.07930609382415!3d-34.87720317056743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe6f3b51cf6629f1!2sVeterinaria%20Las%20Flores%20Camba!5e0!3m2!1ses-419!2suk!4v1660663490362!5m2!1ses-419!2suk"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
 
-        <form id="contact-form">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="first-name">Full Name:</label>
-                            <input type="text" name="user_name" class="form-control">
-                            <!-- <input type="text" class="form-control" id="user_name" name="user_name"> -->
-                        </div>
-                        <div class="form-group">
-                            <label for="first-name">Company:</label>
-                            <input type="text" name="user_name" class="form-control">
-                            <!-- <input type="text" class="form-control" id="user_name" name="user_name"> -->
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" name="user_email" class="form-control">
-                            <!-- <input type="text" class="form-control" id="user_email" name="user_email"> -->
-                        </div>
-                        <div class="form-group">
-                            <label for="contact_number">Contact Number:</label>
-                            <input type="tel" name="contact_number" class="form-control">
-                            <!-- <input type="text" class="form-control" id="user_email" name="user_email"> -->
-                        </div>
 
-                    </div>
-                    <div class="col-md-8">
-                        <label for="message">Message:</label>
-                        <textarea name="message" class="form-control" rows="8"></textarea>
-                        <!-- <textarea class="form-control" rows="8" id="message" name="message"></textarea> -->
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            <input id='sendMessage' type="submit" value="Send" class="btn btn-primary pull-right" style="margin-top: 10px;">
-                            <!-- <button type="submit" class="btn btn-primary pull-right" data-dismiss="modal" value="Send">Submit</button> -->
-
-                            <!-- <div class="alert alert-primary" role="alert" style="display: initial;" id="alert">
-                                Message sent!
-                            </div> -->
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </form>
     </main>
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <footer class="mt-auto text-black-50">
-                    <hr class="rounded">
-                    <!--                     <small> <a class="whatsapp" href="https://wa.me/447774593153"><i class="fab fa-whatsapp"></i> Whatsapp<br></a>  </small> -->
-                    <small><a class="linkedin" href="https://www.linkedin.com/company/geoaustral-apps/"><i class="fab fa-linkedin"></i> LinkedIn<br></a>  </small>
-                    <small>Registered Name: Geoaustral Apps Ltd.<br> </small>
-                    <small>Company Number: 13237739</small>
-                    <small class="d-block mb-3 text-muted">2021</small>
-                </footer>
-            </div>
-        </div>
+    <footer>
+        <div id="footer"></div>
     </footer>
-    <script src="https://kit.fontawesome.com/5c75379b15.js" crossorigin="anonymous"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 

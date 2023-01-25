@@ -368,3 +368,11 @@ a:active {
 .coverLogo {
     width: 35%;
 }
+
+#googleMapsAll {
+    height: 90vh;
+}
+
+#googleMapsFrame {
+    height: 77vh;
+}
