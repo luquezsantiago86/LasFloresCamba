@@ -370,9 +370,10 @@ a:active {
 }
 
 #googleMapsAll {
-    height: 90vh;
+    height: 75vh;
 }
 
 #googleMapsFrame {
-    height: 77vh;
+    height: 63vh;
+    width: 100%;
 }
